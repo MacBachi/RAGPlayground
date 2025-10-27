@@ -62,6 +62,14 @@
           if [ -f ".pre-commit-config.yaml" ]; then
             pre-commit install
           fi
+          
+          if [ -f ".env" ]; then
+            source .env
+          fi
+          
+          if [ -f "requirements.txt" ]; then
+            pip install -r requirements.txt
+          fi
         '';
       };
     };
