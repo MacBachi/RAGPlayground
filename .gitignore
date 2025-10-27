@@ -1,0 +1,72 @@
+# -------------------------------------------------------------------------
+# 1. Spezifische Python-Dateien / Build-Artefakte
+# -------------------------------------------------------------------------
+
+# Python-Kompilierungsartefakte
+*.pyc
+__pycache__/
+*.pyd
+*.pyo
+
+# Bytecode-Caches von Python 3
+.Python
+
+# Verteiler/Build-Artefakte
+/dist/
+/build/
+*.egg-info/
+.coverage
+
+# Tests (z.B. pytest-Cache)
+.pytest_cache/
+
+# Jupyter/IPython
+.ipynb_checkpoints
+
+# -------------------------------------------------------------------------
+# 2. Virtuelle Umgebungen (Venv / Nix / Conda)
+# -------------------------------------------------------------------------
+
+# Standardpfad für virtuelle Umgebungen (Venv)
+/venv/
+/.venv/
+
+# WICHTIG: Die angeforderte Datei 'env' (häufig ein anderer Name für venv)
+/env/
+
+# Standardpfade für Conda/Poetry/Nix
+/envs/
+.direnv/
+.nix-garbage/
+
+# -------------------------------------------------------------------------
+# 3. macOS-spezifische Dateien
+# -------------------------------------------------------------------------
+
+# Eigene Datei-Metadaten von macOS
+.DS_Store
+
+# Resource-Fork-Dateien (häufig auf Netzwerklaufwerken)
+._*
+
+# Log-Dateien von Xcode
+/DerivedData/
+
+# -------------------------------------------------------------------------
+# 4. Editor- und IDE-Dateien (Optionale Erweiterung)
+# -------------------------------------------------------------------------
+
+# JetBrains IDEs (PyCharm, IntelliJ, etc.)
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# -------------------------------------------------------------------------
+# 5. Geheimnisse und Konfigurationen (WICHTIG!)
+# -------------------------------------------------------------------------
+
+# Umgebungsvariablen/Geheimnisse
+# Ignoriert die Datei, in der API-Schlüssel gespeichert sind
+*.env
+.env.*
